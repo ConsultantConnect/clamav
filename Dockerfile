@@ -28,6 +28,7 @@ COPY usr/bin/clamd.sh /usr/bin/clam
 COPY etc/ /etc/
 COPY tests/ /tests/
 COPY docker-entrypoint.sh /docker-entrypoint.sh
+COPY freshclam.conf /etc/freshclam.conf
 
 RUN chmod -R +x /docker-entrypoint.sh /usr/local/bin /usr/bin /tests
 
